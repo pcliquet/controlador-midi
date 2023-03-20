@@ -19,7 +19,8 @@ Jampad
 
 ### Usuários
 
-Músicos e produtores musicais que procuram construir suas músicas de maneira rápida e eficiente.
+- Músicos e produtores musicais que procuram construir suas músicas de maneira rápida e eficiente.
+- DJs que performam suas músicas ao vivo
 
 ### Software/Jogo 
 
