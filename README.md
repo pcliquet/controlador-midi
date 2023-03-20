@@ -59,3 +59,4 @@ Espero que haja algum hardware que consiga me auxiliar tanto no processo de cria
 
 ### Design (2 pts)
 
+![alt text]modelo.png
