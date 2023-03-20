@@ -45,17 +45,13 @@ Espero que haja algum hardware que consiga me auxiliar tanto no processo de cria
 
 ### In/OUT (3 pts)
 
-- Regulagem de volume: Faders de resistência
--  Razão: Como é uma variável contínua, é necessário algo que tenha um grande range de valores que possa assumir. Não utilizaremos potenciômetros pois acreditamos que a experiência do usuário será melhor com o fader, por possibilitar maior agilidade. 
+- Regulagem de volume: Faders de resistência.       Razão: Como é uma variável contínua, é necessário algo que tenha um grande range de valores que possa assumir. Não utilizaremos potenciômetros pois acreditamos que a experiência do usuário será melhor com o fader, por possibilitar maior agilidade. 
   
-- Gravação de mensagens MIDI: Piezo de pressão, push button vermelho.
-- Razão: Como gravar é uma ação binária, basta um botão para ligar/desligar a função. Uma vez que ligada, ela dependerá dos piezos de pressão para realizar sua gravação. O piezo possui um grande intervalo de valores de resistência, que varia de acordo com a velocidade que o usuário bate, que podem ser modelados para produzir sons diversos.
+- Gravação de mensagens MIDI: Piezo de pressão, push button vermelho.      Razão: Como gravar é uma ação binária, basta um botão para ligar/desligar a função. Uma vez que ligada, ela dependerá dos piezos de pressão para realizar sua gravação. O piezo possui um grande intervalo de valores de resistência, que varia de acordo com a velocidade que o usuário bate, que podem ser modelados para produzir sons diversos.
   
-- Tocar samples: Piezo de pressão.
-- Razão: Por ser outra variável contínua, o usuário deve ter maior capacidade de controlar a sensibilidade e intensidade das notas.
+- Tocar samples: Piezo de pressão.      Razão: Por ser outra variável contínua, o usuário deve ter maior capacidade de controlar a sensibilidade e intensidade das notas.
   
-- Controlar efeitos (Reverbe, Chorus, Distortion..): Potenciômetros de 10K.
-- Razão: Como é uma variável contínua, é necessário algo que tenha um grande range de valores que possa assumir. Para isso, utilizaremos potenciômetros, que tornam isso possível.
+- Controlar efeitos (Reverbe, Chorus, Distortion..): Potenciômetros de 10K.      Razão: Como é uma variável contínua, é necessário algo que tenha um grande range de valores que possa assumir. Para isso, utilizaremos potenciômetros, que tornam isso possível.
 
 ### Design (2 pts)
 
