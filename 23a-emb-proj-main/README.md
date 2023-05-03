@@ -22,14 +22,14 @@ Exemplo: 0000000000X <------------------------ pacote
   Os três últimos bits dizem respeito ao valor lido do pontenciômetro:
   -Foi discretizado o range em 8 valores (3 bits) via little endian.
   
-  000 - volume 0
-  001 - volume 1
-  010 - volume 2
-  011 - volume 3
-  100 - volume 4
-  101 - volume 5
-  110 - volume 6
-  111 - volume 7
+  000 - volume 0\n
+  001 - volume 1\n
+  010 - volume 2\n
+  011 - volume 3\n
+  100 - volume 4\n
+  101 - volume 5\n
+  110 - volume 6\n
+  111 - volume 7\n
   
   ## ORDEM CERTA DE LER OS BITS DO POTÊNCIOMETRO:
   - 8° bit é o mais significativo, então ler da esquerda para a direita!
