@@ -1,53 +1,37 @@
 # Projeto Embarcados
 
-Desenvolvendo um controle remoto.
+##README
 
-## Entrega 1
+##FIRMWARE
 
-### Integrantes
+PROTOCOLO DE 10 BITS + EOF ('X')
 
-- Nome1
-- Nome2
+Exemplo: 0000000000X <------------------------ pacote
 
-### Ideia
+##BITS
+  ###botões -- interrupt via callback/flag
+  1° bit -> botão 1 (nota dó, C)
+  2° bit -> botão 2 (nota ré, D)
+  3° bit -> botão 3 (nota mi, E)
+  4° bit -> botão 4 (nota fá, F)
+  5° bit -> botão 5 (nota sol, G)
+  6° bit -> botão 6 (nota lá, A)
+  7° bit -> botão 7 (nota si, B)
+  
+  ###potenciômetro -- interrupt via AFEC
+  Os três últimos bits dizem respeito ao valor lido do pontenciômetro:
+  -Foi discretizado o range em 8 valores (3 bits) via little endian.
+  
+  000 - volume 0
+  001 - volume 1
+  010 - volume 2
+  011 - volume 3
+  100 - volume 4
+  101 - volume 5
+  110 - volume 6
+  111 - volume 7
+  
+  ##ORDEM CERTA DE LER OS BITS DO POTÊNCIOMETRO:
+  - 8° bit é o mais significativo, então ler da esquerda para a direita!
 
-<!--  Descreva aqui em poucas palavras qual a ideia do seu controle. Se ele vai ser de jogo ou de aplicação -->
-
-### Nome
-
-<!-- De um nome ao seu controle! -->
-
-### Usuários 
-
-<!-- Descreva aqui quem seriam os possíveis usuários deste controle. -->
-
-### Software/Jogo 
-
-<!-- Qual software que seu controle vai controlar? -->
-
-### Jornada do usuários (3 pts)
-
-<!-- Descreva ao menos duas jornadas de usuários distintos, é para caprichar! -->
-
-### Comandos/ Feedbacks (2 pts)
-
-<!-- 
-Quais são os comandos/ operacões possíveis do seu controle?
-
-Quais os feedbacks que seu controle vai fornecer ao usuário?
--->
-
-## In/OUT (3 pts)
-
-<!--
-Para cada Comando/ Feedback do seu controle, associe qual sensores/ atuadores pretende utilizar? Faca em formato de lista, exemplo:
-
-- Avanca música: Push button amarelo
-- Volume da música: Fita de LED indicando potência do som
--->
-
-### Design (2 pts)
-
-<!--
-Faca um esboco de como seria esse controle (vai ter uma etapa que terão que detalhar melhor isso).
--->
+  
