@@ -1,15 +1,15 @@
 # Projeto Embarcados
 
-##README
+## README
 
-##FIRMWARE
+## FIRMWARE
 
 PROTOCOLO DE 10 BITS + EOF ('X')
 
 Exemplo: 0000000000X <------------------------ pacote
 
-##BITS
-  ###botões -- interrupt via callback/flag
+## BITS
+  ### botões -- interrupt via callback/flag
   1° bit -> botão 1 (nota dó, C)
   2° bit -> botão 2 (nota ré, D)
   3° bit -> botão 3 (nota mi, E)
@@ -18,7 +18,7 @@ Exemplo: 0000000000X <------------------------ pacote
   6° bit -> botão 6 (nota lá, A)
   7° bit -> botão 7 (nota si, B)
   
-  ###potenciômetro -- interrupt via AFEC
+  ### potenciômetro -- interrupt via AFEC
   Os três últimos bits dizem respeito ao valor lido do pontenciômetro:
   -Foi discretizado o range em 8 valores (3 bits) via little endian.
   
@@ -31,7 +31,7 @@ Exemplo: 0000000000X <------------------------ pacote
   110 - volume 6
   111 - volume 7
   
-  ##ORDEM CERTA DE LER OS BITS DO POTÊNCIOMETRO:
+  ## ORDEM CERTA DE LER OS BITS DO POTÊNCIOMETRO:
   - 8° bit é o mais significativo, então ler da esquerda para a direita!
 
   
